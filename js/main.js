@@ -1,4 +1,4 @@
-ñ//Funciones flecha y funciones de alto nivel para arrays.
+//Funciones flecha y funciones de alto nivel para arrays.
 //En esta unidad aprenderemos a utilizar tanto las funciones flecha (=>) como las funciones de alto nivel incorporadas con ECMAScript2015.
 
 //Sintaxis de las funciones flecha (=>).
