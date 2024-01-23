@@ -147,3 +147,20 @@ const dataSetAverage = dataSet.map(({city, ... dayData})=>{  // convierte cada e
 
 })
 console.log(dataSetAverage);//muestra en consola de cada objeto city el valor promedio.
+
+
+/* FUNCION DE ALTO NIVEL "FILTER" PARA ARRAYS
+Con un menos uso que el forEach() y map() pero igualmente útil por su
+sencillez, disponemos desde ECMAScript2015  del método filter().
+Su sintaxis emplea de nuevo funciones callback por cada iteración del array,
+pero en este caso devuelve en un nuevo array los elementos que cumplan la condición.
+Ejemplo:*/
+let camiones = [
+    {marca:'Mercedes', modelo: 5530, cilindrada: 8800},
+    {marca:'Renault', modelo: 380, cilindrada: 5500},
+    {marca:'Iveco', modelo: 1150, cilindrada: 7400 },    
+]
+const enginePower = camiones.filter((camion) => { //Recibe la ejcución de filter() sobre el objeto camion,
+    return camion.cilindrada < 6000; //la función flecha devuelve los elementos del array cuo valor de cilindrada sea menor que 6000.
+})
+console.log(enginePower);//Muestra en el navegador lo que enginePower ha guardado despues de pasar el filter().
